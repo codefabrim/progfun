@@ -104,6 +104,12 @@ sumCube(1, 4)
   sumInts2(1, 3)
 
   sumCubes2(1,4)
+  sumCubes2(1,4)
+  sumCubes2(1,4)
+  sumCubes2(1,4)
+
+
+
 
 
   //toto
