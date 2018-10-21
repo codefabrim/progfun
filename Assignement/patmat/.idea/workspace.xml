@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a0880bb8-999d-4551-aaed-c5a80386f978" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../src/main/scala/week2/higherorderfunct/higherorderfunc.sc" beforeDir="false" afterPath="$PROJECT_DIR$/../../src/main/scala/week2/higherorderfunct/higherorderfunc.sc" afterDir="false" />
-    </list>
+    <list default="true" id="a0880bb8-999d-4551-aaed-c5a80386f978" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/project/project/target/" />
     <ignored path="$PROJECT_DIR$/project/target/" />
@@ -199,7 +197,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.21728595" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
