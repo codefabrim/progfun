@@ -1,6 +1,4 @@
-package hof
-
-
+package fpscala
 
 import scala.annotation.tailrec
 
@@ -21,7 +19,7 @@ object MyModule {
     else -x
   }
 
-/**
+
   private def formatAbs(x: Int)= {
     val msg = "the absolute value of %d is %d "
     msg.format(x, abs(x))
@@ -32,30 +30,15 @@ object MyModule {
     val msg = "the factorial of %d is %d ."
     msg.format(7, factorial(7))
   }
-*/
 
-   def formatResult(name: String, n: Int, f: Int => Int ) = {
-    val msg = "the %s of %d is %d ."
-    msg.format(name, n, f(n))
+
+  //def formatResult(name: String, )
+
+
+  def main(args: Array[String])  = {
+    println(formatAbs(-22101844))
+    println(formatfactorial(7))
   }
 
-
-
-
-
-  def foldRight[A,B] (as:List[A], z:B)(f: (A,B) => B): B
-
-
-  def main(args: Array[String]):Unit = {
-   // println(formatAbs(-22101844))
-    // println(formatfactorial(7))
-
-   println(formatResult("valeur absolue", -42, abs))
-   println(formatResult("Factoriel ", 9, factorial))
-
-  }
-
-
-  
 
 }

@@ -16,20 +16,14 @@
       <change afterPath="$PROJECT_DIR$/../fpinscala/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../fpinscala/.idea/workspace.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../fpinscala/fpinscala.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/hydra.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_scala_lang_scala_library_2_12_7_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/redbooktuto-build.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/redbooktuto.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sbt.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/scala_compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/hof/MyModule.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/hof/polymorphicfunct.sc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/datastructures/List.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/datastructures/listing.scala" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../src/main/scala/fpscala/MyModule.scala" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../src/main/scala/fpscala/rb_highorderfunction.sc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignement/patmat/src/main/scala/patmat/Huffman.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignement/patmat/src/main/scala/patmat/Huffman.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/hof/MyModule.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/hof/MyModule.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/hof/polymorphicfunct.sc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/hof/polymorphicfunct.sc" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -56,17 +50,38 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/hof/MyModule.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="731">
-              <caret line="43" selection-start-line="43" selection-end-line="43" />
+            <state relative-caret-position="188">
+              <caret line="42" selection-start-line="42" selection-end-line="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/hof/polymorphicfunct.sc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-844">
+              <caret line="84" column="16" selection-start-line="84" selection-start-column="16" selection-end-line="84" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/hof/polymorphicfunct.sc">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/datastructures/listing.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="502">
-              <caret line="150" lean-forward="true" selection-start-line="150" selection-end-line="150" />
+            <state relative-caret-position="-67">
+              <caret line="127" column="67" selection-start-line="127" selection-start-column="67" selection-end-line="127" selection-end-column="67" />
+              <folding>
+                <element signature="e#24#55#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/datastructures/List.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="239">
+              <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
             </state>
           </provider>
         </entry>
@@ -91,14 +106,20 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/scala/hof/MyModule.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/hof/polymorphicfunct.sc" />
+        <option value="$PROJECT_DIR$/src/main/scala/datastructures/tail.sc" />
+        <option value="$PROJECT_DIR$/src/main/scala/listscala/tailll.sc" />
+        <option value="$PROJECT_DIR$/src/main/scala/datastructures/exercice32.sc" />
+        <option value="$PROJECT_DIR$/src/main/scala/datastructures/List.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/hof/MyModule.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/datastructures/listing.scala" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
     <option name="width" value="1280" />
-    <option name="height" value="800" />
+    <option name="height" value="773" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -138,6 +159,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="datastructures" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="redbooktuto" type="b2602c69:ProjectViewProjectNode" />
+              <item name="redbooktuto" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
               <item name="hof" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -154,6 +183,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.scala.compiler.ScalaCompileServerForm" />
   </component>
   <component name="RecentsManager">
@@ -173,7 +203,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.listing">
+    <configuration name="List" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="datastructures.List" />
+      <module name="redbooktuto" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="datastructures.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MyModule" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="hof.MyModule" />
       <module name="redbooktuto" />
@@ -187,8 +230,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="listing" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="datastructures.listing" />
+      <module name="redbooktuto" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="datastructures.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.MyModule" />
+      <item itemvalue="Application.listing" />
+      <item itemvalue="Application.List" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.listing" />
+        <item itemvalue="Application.List" />
         <item itemvalue="Application.MyModule" />
       </list>
     </recent_temporary>
@@ -222,11 +285,46 @@
       <option name="presentableId" value="Default" />
       <updated>1540197576046</updated>
     </task>
+    <task id="LOCAL-00001" summary="chap 2 red book">
+      <created>1540209095466</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1540209095467</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="773" extended-state="6" />
+    <frame x="0" y="23" width="1280" height="773" extended-state="0" />
+    <editor active="true" />
     <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2536349" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32941177" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="sbt-shell-toolwindow" order="7" weight="0.32941177" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32941177" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Build" order="11" weight="0.32941177" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.3632353" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
+      <window_info anchor="right" id="sbt" order="5" />
+      <window_info anchor="right" id="Coverage" order="6" side_tool="true" weight="0.32956383" />
+    </layout>
+    <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" weight="0.24959612" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
@@ -251,24 +349,53 @@
       <window_info anchor="right" id="Palette&#9;" order="4" />
       <window_info anchor="right" id="sbt" order="5" />
       <window_info anchor="right" id="Coverage" order="6" side_tool="true" weight="0.32956383" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="chap 2 red book" />
     <option name="LAST_COMMIT_MESSAGE" value="chap 2 red book" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/scala/hof/MyModule.scala">
+    <entry file="file://$PROJECT_DIR$/build.sbt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/listscala/tailll.sc" />
+    <entry file="file://$PROJECT_DIR$/src/main/scala/datastructures/tail.sc" />
+    <entry file="file://$PROJECT_DIR$/src/main/scala/datastructures/exercice32.sc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        <state relative-caret-position="159">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/datastructures/List.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/hof/polymorphicfunct.sc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="150" lean-forward="true" selection-start-line="150" selection-end-line="150" />
+        <state relative-caret-position="-844">
+          <caret line="84" column="16" selection-start-line="84" selection-start-column="16" selection-end-line="84" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/hof/MyModule.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/datastructures/listing.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-67">
+          <caret line="127" column="67" selection-start-line="127" selection-start-column="67" selection-end-line="127" selection-end-column="67" />
+          <folding>
+            <element signature="e#24#55#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

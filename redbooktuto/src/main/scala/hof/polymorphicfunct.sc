@@ -144,7 +144,7 @@ isSorted(Array(1, 3,5, 6, 7, 3), gt)
 /** HOF with anonymous functions */
 
 findfirst(Array("s", "a", "l", "u", "tt"), (x: String) => x =="l")
-findfirst(Array(1, 3,5, 6, 7, 5,4, 3), (x: Int) => x ==5)
+findfirst(Array(1, 3, 5, 6, 7, 5,4, 3), (x: Int) => x ==5)
 
 
 
