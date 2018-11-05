@@ -1,29 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="14a6aa69-666a-45ba-b0ba-4128b4dbcd5e" name="Default Changelist" comment="chap 2 red book">
-      <change afterPath="$PROJECT_DIR$/../fpinscala/.idea/hydra.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fpinscala/.idea/libraries/sbt__org_scala_lang_modules_scala_xml_2_12_1_0_6_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fpinscala/.idea/libraries/sbt__org_scala_lang_scala_library_2_12_7_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fpinscala/.idea/libraries/sbt__org_scala_lang_scala_reflect_2_12_7_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fpinscala/.idea/libraries/sbt__org_scalactic_scalactic_2_12_3_0_5_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fpinscala/.idea/libraries/sbt__org_scalatest_scalatest_2_12_3_0_5_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fpinscala/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fpinscala/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fpinscala/.idea/modules/root-build.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fpinscala/.idea/sbt.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fpinscala/.idea/scala_compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fpinscala/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fpinscala/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fpinscala/fpinscala.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/datastructures/List.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/datastructures/listing.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../src/main/scala/fpscala/MyModule.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../src/main/scala/fpscala/rb_highorderfunction.sc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assignement/patmat/src/main/scala/patmat/Huffman.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignement/patmat/src/main/scala/patmat/Huffman.scala" afterDir="false" />
+    <list default="true" id="14a6aa69-666a-45ba-b0ba-4128b4dbcd5e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/hof/MyModule.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/hof/MyModule.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/hof/polymorphicfunct.sc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/hof/polymorphicfunct.sc" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -50,7 +29,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/hof/MyModule.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
+            <state relative-caret-position="714">
               <caret line="42" selection-start-line="42" selection-end-line="42" />
             </state>
           </provider>
@@ -59,7 +38,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/hof/polymorphicfunct.sc">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-844">
+            <state relative-caret-position="1428">
               <caret line="84" column="16" selection-start-line="84" selection-start-column="16" selection-end-line="84" selection-end-column="16" />
             </state>
           </provider>
@@ -68,7 +47,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/datastructures/listing.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-67">
+            <state relative-caret-position="17">
               <caret line="127" column="67" selection-start-line="127" selection-start-column="67" selection-end-line="127" selection-end-column="67" />
               <folding>
                 <element signature="e#24#55#0" expanded="true" />
@@ -80,8 +59,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/datastructures/List.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+            <state relative-caret-position="629">
+              <caret line="37" selection-start-line="37" selection-end-line="37" />
             </state>
           </provider>
         </entry>
@@ -116,10 +95,10 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
-    <option name="width" value="1280" />
-    <option name="height" value="773" />
+    <option name="width" value="1920" />
+    <option name="height" value="1053" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -127,7 +106,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -180,6 +158,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -292,14 +271,20 @@
       <option name="project" value="LOCAL" />
       <updated>1540209095467</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="chap 2 red book">
+      <created>1540726286315</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1540726286315</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="773" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1280" height="773" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2536349" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25767368" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -361,37 +346,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/listscala/tailll.sc" />
     <entry file="file://$PROJECT_DIR$/src/main/scala/datastructures/tail.sc" />
-    <entry file="file://$PROJECT_DIR$/src/main/scala/datastructures/exercice32.sc">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/datastructures/exercice32.sc" />
+    <entry file="file://$PROJECT_DIR$/src/main/scala/hof/MyModule.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/datastructures/List.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+        <state relative-caret-position="714">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/hof/polymorphicfunct.sc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-844">
+        <state relative-caret-position="1428">
           <caret line="84" column="16" selection-start-line="84" selection-start-column="16" selection-end-line="84" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/hof/MyModule.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/datastructures/List.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
+        <state relative-caret-position="629">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/datastructures/listing.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-67">
+        <state relative-caret-position="17">
           <caret line="127" column="67" selection-start-line="127" selection-start-column="67" selection-end-line="127" selection-end-column="67" />
           <folding>
             <element signature="e#24#55#0" expanded="true" />

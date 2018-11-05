@@ -78,7 +78,6 @@ object Huffman {
    */
 
   def times(chars: List[Char]): List[(Char, Int)] = chars groupBy identity mapValues (_.size) toList
- //  def times(chars: List[Char]): List[(Char, Int)] = chars map (c => (c, chars count {_ == c}))
 
   /**
    * Returns a list of `Leaf` nodes for a given frequency table `freqs`.
@@ -90,8 +89,7 @@ object Huffman {
 
     def makeOrderedLeafList(freqs: List[(Char, Int)]): List[Leaf] = freqs match  {
       case List() => List()
-
-      case head :: tail => Leaf(head._1, head._2) :: makeOrderedLeafList(tail) sortWith ((l1: Leaf, l2: Leaf) => l1.weight < l2.weight)
+      case head :: tail => Leaf(head._1, head._2) :: makeOrderedLeafList(tail) sortWith ((leaf1: Leaf, leaf2: Leaf) => leaf1.weight < leaf2.weight)
     }
 
 
@@ -113,13 +111,37 @@ object Huffman {
    * If `trees` is a list of less than two elements, that list should be returned
    * unchanged.
    */
-    def combine(trees: List[CodeTree]): List[CodeTree] = trees match {
+    def combine2(trees: List[CodeTree]): List[CodeTree] = trees match {
 
       case left :: right :: rest => (makeCodeTree(left, right) :: rest)
                                                           .sortWith((t1, t2) =>  weight(t1) < weight(t2))
       case _ => trees
 
     }
+
+
+
+  def combine(trees: List[CodeTree]): List[CodeTree] = {
+
+    def insert(toInsert: CodeTree, orderedTrees: List[CodeTree]): List[CodeTree] = {
+      //val  (lt, gt) = orderedTrees span(x => weight(x) < weight(element))
+      //val pair  = orderedTrees span(el => weight(el) < weight(toInsert))
+      //pair._1 ::: (toInsert :: pair._2)
+      val pair  = orderedTrees span(el => weight(el) > weight(toInsert))
+      pair._2 ::: (toInsert :: pair._1)
+    }
+
+    if (singleton(trees)) trees
+    else
+      trees match {
+        case Nil => trees
+        case Leaf(c1, w1) :: Leaf(c2, w2) :: xs => insert(Fork(Leaf(c1, w1), Leaf(c2, w2), List(c1, c2), w1 + w2), xs)
+        case Fork(left, right, chars, w1) :: Leaf(c, w2) :: xs => insert(Fork(Fork(left, right, chars, w1), Leaf(c, w2), c :: chars, w1 + w2), xs)
+        case Leaf(c, w2) :: Fork(left, right, chars, w1) :: xs => insert(Fork(Leaf(c, w2), Fork(left, right, chars, w1), c :: chars, w1 + w2), xs)
+        case Fork(left1, right1, chars1, w1) :: Fork(left2, right2, chars2, w2) :: xs => insert(Fork(Fork(left1, right1, chars1, w1), Fork(left2, right2, chars2, w2), chars1 ::: chars2, w1 + w2), xs)
+        case _ => throw new IllegalStateException("match failed")
+      }
+  }
   
   /**
    * This function will be called in the following way:
