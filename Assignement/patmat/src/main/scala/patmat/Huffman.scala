@@ -139,7 +139,7 @@ object Huffman {
         case Fork(left, right, chars, w1) :: Leaf(c, w2) :: xs => insert(Fork(Fork(left, right, chars, w1), Leaf(c, w2), c :: chars, w1 + w2), xs)
         case Leaf(c, w2) :: Fork(left, right, chars, w1) :: xs => insert(Fork(Leaf(c, w2), Fork(left, right, chars, w1), c :: chars, w1 + w2), xs)
         case Fork(left1, right1, chars1, w1) :: Fork(left2, right2, chars2, w2) :: xs => insert(Fork(Fork(left1, right1, chars1, w1), Fork(left2, right2, chars2, w2), chars1 ::: chars2, w1 + w2), xs)
-        case _ => throw new IllegalStateException("match failed")
+        case _ => throw new IllegalStateException("Humm match failed")
       }
   }
   
@@ -175,7 +175,7 @@ object Huffman {
    * frequencies from that text and creates a code tree based on them.
    */
 
-  //def createCodeTree(chars: List[Char]): CodeTree =  ???
+
     def createCodeTree(chars: List[Char]): CodeTree =
       until(singleton, combine)(makeOrderedLeafList(times(chars))).head
   
@@ -189,12 +189,14 @@ object Huffman {
    * the resulting list of characters.
    */
     def decode(tree: CodeTree, bits: List[Bit]): List[Char] = {
-      def rec(tree: CodeTree, bits: List[Bit], acc: List[Char]): List[Char] = tree match {
-        case Leaf(c, _) => if (bits == Nil) c :: acc else rec(root, bits, c :: acc)
-        case Fork(l, r, chars, _) => rec(if (bits.head == 0) l else r, bits.tail, acc)
+
+      def go(tree: CodeTree, bits: List[Bit], acc: List[Char]): List[Char] = tree match {
+
+        case Leaf(c, _) => if (bits == Nil) c :: acc else go(tree, bits, c :: acc)
+        case Fork(l, r, chars, _) => go(if (bits.head == 0) l else r, bits.tail, acc)
       }
-      val root = tree
-      rec(root, bits, Nil).reverse
+      //val root = tree
+      go(tree, bits, Nil).reverse
     }
       /**  def decode(tree: CodeTree, bits: List[Bit]): List[Char] = tree match {
       case Leaf (c, _) => if (bits.isEmpty) List(c) else  c :: decode(tree, bits)
@@ -249,17 +251,27 @@ object Huffman {
    * This function encodes `text` using the code tree `tree`
    * into a sequence of bits.
    */
-    def encode(tree: CodeTree)(text: List[Char]): List[Bit] =  {
-      text.foldLeft(List[Bit](_)) {(acc, c) =>
-        def rec(tree: CodeTree, acc: List[Bit]): List[Bit] = tree match {
-          case Leaf(c, _) => acc
-          case Fork(l, r, _, _) => if (chars(l) contains c) rec(l, 0 :: acc) else rec(r, 1 :: acc)
-        }
-        rec(tree, acc)
-      }.reverse
 
+
+
+  def encode(tree: CodeTree)(text: List[Char]): List[Bit] = {
+
+    def myEncodeHelper(tree: CodeTree, s: Char): List[Bit] = tree match{
+
+      case Leaf(c,_) => Nil
+      case Fork(left,right,c,_) if chars(left).contains(s) => List(0) ::: myEncodeHelper(left, s)
+      case Fork(left,right,c,_) if chars(right).contains(s) => List(1) ::: myEncodeHelper(right,s)
     }
-  
+
+    text match {
+      case Nil      => Nil
+      case x :: Nil => myEncodeHelper(tree, x)
+      case x :: xs  => myEncodeHelper(tree, x) ::: encode(tree)(xs)
+    }
+
+  }
+
+
   // Part 4b: Encoding using code table
 
   type CodeTable = List[(Char, List[Bit])]
