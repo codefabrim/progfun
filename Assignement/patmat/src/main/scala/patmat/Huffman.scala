@@ -45,7 +45,7 @@ object Huffman {
    * In this assignment, we are working with lists of characters. This function allows
    * you to easily create a character list from a given string.
    */
-  //def string2Chars(str: String): List[Char] = str.toList
+
   def string2Chars(str: String): List[Char] = str.toList
 
   /**
@@ -111,22 +111,10 @@ object Huffman {
    * If `trees` is a list of less than two elements, that list should be returned
    * unchanged.
    */
-    def combine2(trees: List[CodeTree]): List[CodeTree] = trees match {
-
-      case left :: right :: rest => (makeCodeTree(left, right) :: rest)
-                                                          .sortWith((t1, t2) =>  weight(t1) < weight(t2))
-      case _ => trees
-
-    }
-
-
 
   def combine(trees: List[CodeTree]): List[CodeTree] = {
 
     def insert(toInsert: CodeTree, orderedTrees: List[CodeTree]): List[CodeTree] = {
-      //val  (lt, gt) = orderedTrees span(x => weight(x) < weight(element))
-      //val pair  = orderedTrees span(el => weight(el) < weight(toInsert))
-      //pair._1 ::: (toInsert :: pair._2)
       val pair  = orderedTrees span(el => weight(el) > weight(toInsert))
       pair._2 ::: (toInsert :: pair._1)
     }
@@ -198,18 +186,7 @@ object Huffman {
       //val root = tree
       go(tree, bits, Nil).reverse
     }
-      /**  def decode(tree: CodeTree, bits: List[Bit]): List[Char] = tree match {
-      case Leaf (c, _) => if (bits.isEmpty) List(c) else  c :: decode(tree, bits)
-      case Fork(left, right, _, _) => if (bits.head == 0) decode(left, bits.tail)
-      else decode(right, bits.tail)
 
-
-
-
-
-    }
-        */
-  
   /**
    * A Huffman coding tree for the French language.
    * Generated from the data given at
@@ -255,22 +232,17 @@ object Huffman {
 
 
   def encode(tree: CodeTree)(text: List[Char]): List[Bit] = {
-
-    def myEncodeHelper(tree: CodeTree, s: Char): List[Bit] = tree match{
-
-      case Leaf(c,_) => Nil
-      case Fork(left,right,c,_) if chars(left).contains(s) => List(0) ::: myEncodeHelper(left, s)
-      case Fork(left,right,c,_) if chars(right).contains(s) => List(1) ::: myEncodeHelper(right,s)
+    def myEncodeHelper(sub_tree: CodeTree, text: List[Char]): List[Bit] = {
+      if( text.isEmpty ) List[Bit]()
+      else sub_tree match {
+        case Leaf(_, _) => myEncodeHelper(tree, text.tail)
+        case Fork(left, right, _, _) =>
+          if( chars(left).contains(text.head) ) 0 :: myEncodeHelper(left, text)
+          else 1 :: myEncodeHelper(right, text)
+      }
     }
-
-    text match {
-      case Nil      => Nil
-      case x :: Nil => myEncodeHelper(tree, x)
-      case x :: xs  => myEncodeHelper(tree, x) ::: encode(tree)(xs)
-    }
-
+    myEncodeHelper(tree, text)
   }
-
 
   // Part 4b: Encoding using code table
 
