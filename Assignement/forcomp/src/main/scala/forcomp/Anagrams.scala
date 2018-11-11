@@ -1,6 +1,5 @@
 package forcomp
 
-import scala.collection.immutable.Stream.Empty
 
 
 object Anagrams {
@@ -8,8 +7,10 @@ object Anagrams {
   /** A word is simply a `String`. */
   type Word = String
 
+
   /** A sentence is a `List` of words. */
   type Sentence = List[Word]
+
 
   /** `Occurrences` is a `List` of pairs of characters and positive integers saying
    *  how often the character appears.
@@ -22,6 +23,8 @@ object Anagrams {
    *  Note: If the frequency of some character is zero, then that character should not be
    *  in the list.
    */
+
+
   type Occurrences = List[(Char, Int)]
 
   /** The dictionary is simply a sequence of words.
